@@ -1,0 +1,8 @@
+com\mycompany\udacity_project_sales_invoice_generator\Udacity_project_sales_invoice_generator.class
+controller\MenuItemsActions.class
+model\FileOperations.class
+controller\JTableModelController.class
+model\InvoiceHeader.class
+model\InvoiceLine.class
+controller\ButtonsActions.class
+view\MainFrame.class
