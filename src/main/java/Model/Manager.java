@@ -52,7 +52,9 @@ public class Manager {
                         MainFrame.LargestPrime.setText(Integer.toString(currentNum));
                         MainFrame.NumOfPrime.setText(Integer.toString(primeCount));
                         MainFrame.TimeElapsed.setText( "    " +Long.toString(System.currentTimeMillis() - startTime) + "ms");
-                   
+                  
+                        
+notify();
                         
 
                     }
@@ -60,7 +62,7 @@ public class Manager {
                     currentNum++;
                     primeFlag=0;
                     //MainFrame.LargestPrime.setText("Test");
-                    notify();
+                    
 
 
                 }
