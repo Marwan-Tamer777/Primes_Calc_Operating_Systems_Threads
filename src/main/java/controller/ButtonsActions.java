@@ -37,7 +37,7 @@ public class ButtonsActions implements ActionListener{
                 ConsumeThread t2 = new ConsumeThread(Prime_Generator_Operating_Systems.manage);
                 t1.start();
                 t2.start();
-                
+              /*  
             try {
                 t1.join();
             } catch (InterruptedException ex) {
@@ -48,8 +48,9 @@ public class ButtonsActions implements ActionListener{
             } catch (InterruptedException ex) {
                 Logger.getLogger(ButtonsActions.class.getName()).log(Level.SEVERE, null, ex);
             }
-            
+            */
             }
+               
         }
     }
 
