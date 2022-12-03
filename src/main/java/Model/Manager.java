@@ -43,7 +43,7 @@ public class Manager {
                         System.out.println("FULL");
                         wait();}
                     for(int i=2;i<currentNum;i++){
-                        if(currentNum%i==0){primeFlag=1;}
+                        if(currentNum%i==0){primeFlag=1;break;}
                     }
                     if(primeFlag==0){
                         list.add(currentNum);
@@ -52,12 +52,16 @@ public class Manager {
                         MainFrame.LargestPrime.setText(Integer.toString(currentNum));
                         MainFrame.NumOfPrime.setText(Integer.toString(primeCount));
                         MainFrame.TimeElapsed.setText( "    " +Long.toString(System.currentTimeMillis() - startTime) + "ms");
+                   
+                        
+
                     }
                     System.out.println("Produced - " + currentNum + " Details: "+list.size() + "  : " + capacity);
                     currentNum++;
                     primeFlag=0;
                     //MainFrame.LargestPrime.setText("Test");
                     notify();
+
 
                 }
             }
@@ -69,7 +73,7 @@ public class Manager {
                 {
                     while (list.isEmpty()){wait();}
  
-                    int val = list.removeFirst();
+                    int val = list.removeFirst(
  
                     writeIn(val);
                     System.out.println("Consumed - "+ val);
